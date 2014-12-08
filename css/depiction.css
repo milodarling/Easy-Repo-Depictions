@@ -1,0 +1,215 @@
+body
+{
+    position:relative;
+    margin:0;
+	-webkit-text-size-adjust:none;
+	min-height:0px;
+	font-family:helvetica,sans-serif;
+	background:url("../images/background.png"),url('../images/menutouched.png') no-repeat,url('../images/storetouched.png') no-repeat,url("../images/arrow.png") no-repeat;
+	-webkit-touch-callout:none
+}
+
+.center
+{
+    margin:auto;
+	display:block
+}
+
+img
+{
+    border:0
+}
+
+.slideleft
+{
+    -webkit-transform:translate(-150%,0);
+	-webkit-transition-duration:1.5s
+}
+
+.slideright
+{
+    -webkit-transform:translate(150%,0);
+	-webkit-transition-duration:1.5s
+}
+
+a:hover span.arrow
+{
+    background-image:url("../images/arrow.png")!important
+}
+
+#topbar
+{
+    position:relative;
+	left:0;
+	top:0;
+	height:44px;
+	width:auto;
+	background:url("../images/header.png") repeat;margin-bottom:13px
+}
+
+#title
+{
+    position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	padding:0 10px;
+	text-align:center;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	overflow:hidden;
+	height:44px;
+	line-height:44px;
+	font-weight:bold;
+	color:#FFF;
+	text-shadow:rgba(0,0,0,0.6) 0 -1px 0;
+	font-size:16pt
+}
+
+#content
+{
+    width:100%;
+	position:relative;
+	min-height:250px;
+	margin-top:10px;
+	height:auto;
+	-webkit-transition-property:-webkit-transform;
+	-webkit-transform-style:preserve-3d;
+	z-index:0;overflow:hidden
+}
+
+#footer
+{
+    text-align:center;
+	position:relative;
+	margin:20px 10px 0;
+	height:auto;
+	width:auto;
+	bottom:10px
+}
+
+#footer a
+{
+    text-decoration:none;
+	font-size:9pt;
+	color:#4C4C4C;
+	text-shadow:#FFF 0 1px 0
+}
+
+.pageitem,.form
+{
+    -webkit-border-bottom-left-radius:8px 8px;
+	-webkit-border-bottom-right-radius:8px 8px;
+	-webkit-border-top-left-radius:8px 8px;
+	-webkit-border-top-right-radius:8px 8px;
+	background-color:#fff;
+	border:#878787 solid 1px;
+	font-size:12pt;
+	overflow:hidden;
+	padding:0;
+	position:relative;
+	display:block;
+	height:auto;
+	width:auto;
+	margin:3px 9px 17px;list-style:none
+}
+
+.textbox
+{
+    padding:5px 9px;
+	overflow:hidden;
+	border-top:1px solid #878787
+}
+
+.textbox p
+{
+    margin-top:2px;
+	color:#000;
+	margin-bottom:2px;
+	text-align:justify
+}
+
+.textbox img
+{
+    max-width:100%
+}
+
+.textbox ul
+{
+    margin:3px 0 3px 0;
+	list-style:circle!important
+}
+
+.textbox li
+{
+    margin:0!important
+}
+
+.pageitem li:first-child
+{
+    border-top:0
+}
+
+li.menu,ul.form li
+{
+    position:relative;
+	list-style-type:none;
+	display:block;height:43px;
+	overflow:hidden;
+	border-top:1px solid #878787;
+	width:auto
+}
+
+li.menu a
+{
+    display:block;
+	height:43px;
+	width:auto;
+	text-decoration:none
+}
+
+li.menu a img
+{
+    width:auto;
+	height:32px;
+	margin:5px 0 0 5px;
+	float:left
+}
+
+li.menu span.name
+{
+    margin:11px 0 0 7px;
+	width:auto;
+	color:#000;
+	font-weight:bold;
+	font-size:17px;
+	text-overflow:ellipsis;
+	overflow:hidden;
+	max-width:75%;
+	white-space:nowrap;
+	float:left
+}
+
+li.menu span.comment
+{
+    margin:11px 30px 0 0;
+	width:auto;
+	color:#000;
+	font-size:17px;
+	text-overflow:ellipsis;
+	overflow:hidden;
+	max-width:75%;
+	white-space:nowrap;
+	float:right;
+	color:#324f85
+}
+
+li.menu span.arrow
+{
+    position:absolute;
+	width:8px!important;height:13px!important;
+	right:10px;
+	top:15px;
+	margin:0!important;
+	background:url("../images/arrow.png") no-repeat
+}
