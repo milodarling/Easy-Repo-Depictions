@@ -6,7 +6,9 @@
         echo "<title>$name</title></head>";
         
         include("template/index/description.php");
-        
+        if ($isUDIDProtected){
+        	echo "<p style=\"color: red;\">This package is UDID protected! You must be have your device registered to downlaod this package</p>"
+        }
         foreach($description as $p){
             echo "<p>$p</p>";
         };

@@ -10,6 +10,7 @@ First off, go into templates/index/ and edit devLink.php and footerText.php and 
 You can look at some of the examples I left, but basically, each file that defines the variables is in the root depiction directory and looks something like this:
 
     <?php
+        $isUDIDProtected=TRUE; //you don’t have to define this if you want it to be false, you can just omit it.
         $name="Swag Tweak"; //title of the package
         
         $description=array(“This tweak is swag“, “This will be on the next line”);
