@@ -1,7 +1,7 @@
 Easy-Repo-Depictions
 =============
 
-This makes depictions very easy. Simply make a new php named whatever you want that defines the variables below, and you can link to it using http://yourrepo.com/depictions?dep=\<filename\> (not including .php). This is the system used by the RCRepo and invented by @ibbignerd. In the RCRepo's case, we use package IDs for filenames, so the depiction for PreferenceReseter is http://rcrepo.com/depictions?dep=com.milodarling.preferencereseter.
+This makes depictions very easy. Simply make a new php named whatever you want that defines the variables below, and you can link to it using `http://yourrepo.com/depictions?dep=<filename>` (not including .php). This is the system used by the RCRepo and invented by @ibbignerd. In the RCRepo's case, we use package IDs for filenames, so the depiction for PreferenceReseter is http://rcrepo.com/depictions?dep=com.milodarling.preferencereseter.
 
 It uses [HASHBANG's iOS 7 CSS](https://github.com/hbang/iOS-7-CSS).
 
