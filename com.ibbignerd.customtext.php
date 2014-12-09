@@ -1,5 +1,6 @@
 <?php
 	$isUDIDProtected=TRUE;
+	$compatibleVersions=array("8.1.1","8.1","8.0");
     $name="CustomText";
     $description=array(
 "Create your own widget with a <text style=\"font-family:'Times New Roman'\">font</text>, <text style='color:green'>color</text>, <text style='font-size:12px'>size</text>, and <strong>text-decoration</strong> that suits you. Just enter a placeholder and CustomTime with replace it with the appropriate text.<br><br>

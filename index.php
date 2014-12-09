@@ -7,9 +7,24 @@
         
         include("template/index/description.php");
         if ($isUDIDProtected){
-        	echo "<p style=\"color: red;\">This package is UDID protected! You must be have your device registered to downlaod this package</p>";
+        	echo "<p style=\"color: red;\">This package is UDID protected! You must be have your device registered to download this package</p>";
         }
-        foreach($description as $p){
+        
+        $uaString = $_SERVER["HTTP_USER_AGENT"];
+        if (preg_match("/(.*) OS ([0-9]*)_([0-9]*)_([0-9]*) (.*)/", $uaString)) {
+        	$version = preg_replace("/(.*) OS ([0-9]*)_([0-9]*)_([0-9]*) (.*)/","$2.$3.$4", $uaString);
+        } else if (preg_match("/(.*) OS ([0-9]*)_([0-9]*) (.*)/", $uaString)) {
+        	$version = preg_replace("/(.*) OS ([0-9]*)_([0-9]*) (.*)/","$2.$3", $uaString);
+        }
+
+        if ($compatibleVersions && $version) {
+	        if (in_array($version, $compatibleVersions)) {
+        		echo "<p style=\"color: green;\">This package is compatible with your iOS version :)</p>";
+    	    } else {
+	        	echo "<p style=\"color: #FFCC00\">This package is not comfirmed to work on your iOS version</p>";
+        	}
+        }
+    	foreach($description as $p){
             echo "<p>$p</p>";
         };
         

@@ -11,6 +11,7 @@ You can look at some of the examples I left, but basically, each file that defin
 
     <?php
         $isUDIDProtected=TRUE; //you don’t have to define this if you want it to be false, you can just omit it.
+		$compatibleVersions=array("8.1.1","8.1","8.0.2","8.0.1","8.0","7.1.2"); //if you don't define this array, nothing shows up for the user 
         $name="Swag Tweak"; //title of the package
         
         $description=array(“This tweak is swag“, “This will be on the next line”);
